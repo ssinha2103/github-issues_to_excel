@@ -24,7 +24,7 @@ Replace `<milestone_number>` with the number of the milestone you want to extrac
 
 Example:
 
-`python main.py 1 abc123def456 issues-codex`
+`python main.py 1 abc123def456 issues-repo-name owner_of_the_repo`
 
 
 This will extract all issues from milestone 1 in the specified repository and save them to an Excel file.

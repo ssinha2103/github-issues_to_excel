@@ -1,16 +1,10 @@
-import sys
-import app
+from github_issue_extractor import GitHubIssueExtractor
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("Usage: python script.py <milestone_number> <access_token> <repo_name>")
-        sys.exit(1)
-    if len(sys.argv) > 4:
-        app.run(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
-    if len(sys.argv) > 3:
-        app.run(sys.argv[1], sys.argv[2], sys.argv[3])
-    else:
-        app.run(sys.argv[1], sys.argv[2])
+    milestone_number = "1"
+    access_token = "your-access-token"
+    repo_name = "your-repo-name"
+    owner = "your-owner-name"
 
-
+    extractor = GitHubIssueExtractor(milestone_number, access_token, repo_name, owner)
+    extractor.run()
