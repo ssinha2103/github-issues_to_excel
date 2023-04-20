@@ -17,7 +17,7 @@ This script extracts all issues from a specified milestone in a GitHub repositor
 
 To run the script, use the following command:
 
-`python main.py <milestone_number> <access_token> <repo-name>`
+`python main.py <milestone_number> <access_token> <repo-name> <name_of_owner_of_the_repo>`
 
 
 Replace `<milestone_number>` with the number of the milestone you want to extract issues from, and `<access_token>` with your GitHub access token and `<repo-name>` with the repo name.
