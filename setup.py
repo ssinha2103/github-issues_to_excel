@@ -7,6 +7,7 @@ setuptools.setup(
     author_email="s.sinha2103@outlook.com",
     description="GitHubIssueExtractor",
     long_description="GitHubIssueExtractor",
+    long_description_content_type="text/markdown",
     url="https://github.com/ssinha2103/github-issues_to_excel",
     packages=setuptools.find_packages(),
     classifiers=[
