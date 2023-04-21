@@ -22,6 +22,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Copy README to root directory
+      run: cp -r README.md .
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
