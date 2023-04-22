@@ -1,6 +1,6 @@
 # GitHub Issue Extractor
 
-GitHub Issue Extractor is a Python utility that helps you extract issues from a specific GitHub repository and milestone. This tool utilizes the GitHub API and requires an access token for authentication. 
+The GitHub Issue Extractor allows you to easily filter and extract issues from a GitHub repository based on a specified milestone number. It uses the GitHub API and requires an access token for authentication. This powerful utility writes the extracted information into an Excel file for convenient analysis and reporting.
 
 ## Features
 - Extract issues from a specific GitHub repository
