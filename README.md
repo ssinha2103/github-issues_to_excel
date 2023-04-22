@@ -1,37 +1,45 @@
 # GitHub Issue Extractor
 
-This script extracts all issues from a specified milestone in a GitHub repository and saves them to an Excel file. The script can be run from the command line and accepts the milestone number and access token as arguments.
+GitHub Issue Extractor is a Python utility that helps you extract issues from a specific GitHub repository and milestone. This tool utilizes the GitHub API and requires an access token for authentication. 
 
-## Requirements
+## Features
+- Extract issues from a specific GitHub repository
+- Filter issues by milestone number
+- Requires a GitHub access token for authentication
 
-- Python 3.6 or higher
-- requests module
-- openpyxl module
+## Prerequisites
+- Python 3.x
+- `requests` library
 
 ## Installation
+1. Clone the repository:
+    `git clone https://github.com/ssinha2103/github-issues_to_excel`
+2. Install the required dependencies:
+    `pip install -r requirements.txt`
 
-1. Clone the GitHub repository to your local machine.
-2. Install the required modules using pip: `pip install -r requirements.txt`
 
 ## Usage
+To use the GitHub Issue Extractor, simply import the class and create an instance with the required parameters:
 
-To run the script, use the following command:
+```python
+from github_issue_extractor import GitHubIssueExtractor
 
-`python main.py <milestone_number> <access_token> <repo-name> <name_of_owner_of_the_repo>`
+milestone_number = 1
+access_token = "your_access_token_here"
+repo_name = "repository_name"
+owner = "repository_owner"
 
+extractor = GitHubIssueExtractor(milestone_number, access_token, repo_name, owner)
+extractor.run()
 
-Replace `<milestone_number>` with the number of the milestone you want to extract issues from, `<access_token>` with your GitHub access token, `<repo-name>` with the repo name, and `<name_of_owner_of_the_repo>` with the name of the owner of the repository.
+```
+Replace the values of `milestone_number`, `access_token`, `repo_name`, and `owner` with your desired settings.
 
-Example:
-
-`python main.py 1 abc123def456 issues-repo-name owner_of_the_repo`
-
-
-
-This will extract all issues from milestone 1 in the specified repository and save them to an Excel file.
-
-The Excel file will be saved as `<reponame>-<milestone_number>.xlsx` in the Downloads folder.
+## Parameters
+1. `milestone_number`: The milestone number you want to filter issues by.
+2. `access_token`: Your GitHub personal access token for authentication. Follow [these instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to create a personal access token.
+3. `repo_name`: The name of the repository from which you want to extract issues.
+4. `owner`: The username of the repository owner.
 
 ## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.

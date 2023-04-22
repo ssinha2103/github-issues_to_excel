@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="github_issue_extractor",
-    version="0.1.1",
+    version="0.1.2",
     author="Sudarshan Sinha",
     author_email="s.sinha2103@outlook.com",
     description="GitHubIssueExtractor",
