@@ -20,14 +20,18 @@ To run the script, use the following command:
 `python main.py <milestone_number> <access_token> <repo-name> <name_of_owner_of_the_repo>`
 
 
-Replace `<milestone_number>` with the number of the milestone you want to extract issues from, and `<access_token>` with your GitHub access token and `<repo-name>` with the repo name.
+Replace `<milestone_number>` with the number of the milestone you want to extract issues from, `<access_token>` with your GitHub access token, `<repo-name>` with the repo name, and `<name_of_owner_of_the_repo>` with the name of the owner of the repository.
 
 Example:
 
 `python main.py 1 abc123def456 issues-repo-name owner_of_the_repo`
 
 
+
 This will extract all issues from milestone 1 in the specified repository and save them to an Excel file.
 
-The Excel file will be saved as `<reponame>-<milestone_number>.xlsx` at the Downloads folder.
+The Excel file will be saved as `<reponame>-<milestone_number>.xlsx` in the Downloads folder.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
