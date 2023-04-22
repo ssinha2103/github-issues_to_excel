@@ -11,12 +11,17 @@ GitHub Issue Extractor is a Python utility that helps you extract issues from a 
 - Python 3.x
 - `requests` library
 
-## Installation
+## Installation 
+ Follow either `Installation Type 1` or `Installation Type 2`
+
+### Installation Type 1
+1. `pip install github-issue-extractor`
+
+### Installation Type 2
 1. Clone the repository:
     `git clone https://github.com/ssinha2103/github-issues_to_excel`
 2. Install the required dependencies:
     `pip install -r requirements.txt`
-
 
 ## Usage
 To use the GitHub Issue Extractor, simply import the class and create an instance with the required parameters:
